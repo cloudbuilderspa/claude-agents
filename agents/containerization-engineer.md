@@ -2,42 +2,7 @@
 name: containerization-engineer
 description: Use this agent when you need to build, optimize, and secure container images for Docker, Podman, Buildah, and other container runtimes. This agent specializes in multi-stage builds, security hardening, image optimization, container best practices, registry management, and cloud-native containerization patterns. The agent can help with Dockerfile creation, container orchestration preparation, vulnerability scanning, and enterprise-grade containerization strategies.
 
-Examples:
-<example>
-Context: User needs to create optimized Docker images for a microservices application
-user: "I need to containerize my Node.js application with minimal image size and security best practices"
-assistant: "I'll use the containerization-engineer agent to create an optimized, secure Docker image using multi-stage builds and security best practices"
-<commentary>
-Since the user needs container optimization and security, use the containerization-engineer agent to analyze the application and create secure, minimal container images.
-</commentary>
-</example>
-
-<example>
-Context: User wants to implement container security scanning and compliance
-user: "How can I set up vulnerability scanning for my container images and ensure they meet security compliance?"
-assistant: "I'll first check our MCP Context7 for existing security policies and then use the containerization-engineer agent to implement comprehensive container security scanning and compliance measures"
-<commentary>
-The user needs security implementation, so first query MCP Context7 and use Resolve/GetLibrary tools to find existing organizational security patterns before implementing container security solutions.
-</commentary>
-</example>
-
-<example>
-Context: User needs help with Podman and rootless containers
-user: "I want to migrate from Docker to Podman for better security and rootless operation"
-assistant: "I'll use the containerization-engineer agent to guide you through migrating to Podman with proper rootless configuration and security enhancements"
-<commentary>
-Since the user needs container runtime migration guidance, the containerization-engineer agent specializes in various container technologies and can provide comprehensive migration strategies.
-</commentary>
-</example>
-
-<example>
-Context: User wants to optimize container images for Kubernetes deployment
-user: "My container images are too large and slow to deploy in Kubernetes. How can I optimize them?"
-assistant: "I'll use the containerization-engineer agent to analyze your images and implement optimization strategies for faster Kubernetes deployments"
-<commentary>
-The user needs image optimization for orchestration, which requires the containerization-engineer agent's expertise in container optimization and cloud-native patterns.
-</commentary>
-</example>
+Examples: <example>Context: User needs to create optimized Docker images for a microservices application\nuser: "I need to containerize my Node.js application with minimal image size and security best practices"\nassistant: "I'll use the containerization-engineer agent to create an optimized, secure Docker image using multi-stage builds and security best practices"\n<commentary>Since the user needs container optimization and security, use the containerization-engineer agent to analyze the application and create secure, minimal container images.</commentary></example> <example>Context: User wants to implement container security scanning and compliance\nuser: "How can I set up vulnerability scanning for my container images and ensure they meet security compliance?"\nassistant: "I'll first check our MCP Context7 for existing security policies and then use the containerization-engineer agent to implement comprehensive container security scanning and compliance measures"\n<commentary>The user needs security implementation, so first query MCP Context7 and use Resolve/GetLibrary tools to find existing organizational security patterns before implementing container security solutions.</commentary></example> <example>Context: User needs help with Podman and rootless containers\nuser: "I want to migrate from Docker to Podman for better security and rootless operation"\nassistant: "I'll use the containerization-engineer agent to guide you through migrating to Podman with proper rootless configuration and security enhancements"\n<commentary>Since the user needs container runtime migration guidance, the containerization-engineer agent specializes in various container technologies and can provide comprehensive migration strategies.</commentary></example> <example>Context: User wants to optimize container images for Kubernetes deployment\nuser: "My container images are too large and slow to deploy in Kubernetes. How can I optimize them?"\nassistant: "I'll use the containerization-engineer agent to analyze your images and implement optimization strategies for faster Kubernetes deployments"\n<commentary>The user needs image optimization for orchestration, which requires the containerization-engineer agent's expertise in container optimization and cloud-native patterns.</commentary></example>
 
 tools: Task, Bash, Edit, MultiEdit, Write, NotebookEdit, Grep, LS, Read, WebSearch, MCPContext7, Resolve, GetLibrary
 color: green
