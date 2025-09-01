@@ -1,0 +1,33 @@
+{
+  "mcpServers": {
+    "context7": {
+      "command": "npx",
+      "args": ["-y", "@upstash/context7-mcp"],
+      "env": {
+        "CONTEXT7_API_KEY": "your-context7-api-key"
+      }
+    },
+    "filesystem": {
+      "command": "npx",
+      "args": [
+        "-y", 
+        "@modelcontextprotocol/server-filesystem",
+        "/Users/asuresky/Documents/src/github_private"
+      ]
+    },
+    "github": {
+      "command": "npx", 
+      "args": ["-y", "@modelcontextprotocol/server-github"],
+      "env": {
+        "GITHUB_PERSONAL_ACCESS_TOKEN": "your-github-token"
+      }
+    },
+    "roblox-docs": {
+      "command": "python",
+      "args": ["/Users/asuresky/Documents/src/github_private/claude-agents/agents/roblox-cube3d-agent/tools/roblox_mcp_server.py"],
+      "env": {
+        "ROBLOX_API_KEY": "your-opencloud-api-key"
+      }
+    }
+  }
+}
